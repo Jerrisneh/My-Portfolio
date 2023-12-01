@@ -13,7 +13,10 @@ body{
     background-color:#0F1624;
     gap: 10%;
     padding: 25px 50px;
-    
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+    top: 0;
    
 }
 .nav-both{
@@ -42,25 +45,29 @@ body{
     text-decoration: none;
     color: white;
 }
+
 .nav-links-logos ul{
     display: flex;
     align-items: flex-end;
     list-style: none;
     gap: 20px;
 }
+
 .hero{
     background-color: #0F1624;
     display: grid;
     grid-template-columns: 2fr 1fr;
     gap: 30px;
+   margin-top: 100px;
     padding: 80px;
-
 }
+
 .hero img{
     width: 400px; 
     border-top-right-radius: 20px;
     border-bottom-left-radius: 20px;
 }
+
 .hero h1{
     color: #FFFFFF;
     font-weight: 700;
@@ -81,11 +88,13 @@ button{
     border-radius: 40px;
 }
 .about{
-    padding: 80px 0 80px 80px;
+    padding: 80px 0 0 80px;
     background-color: #FFFFFF;
     display: grid;
     grid-template-columns: 2fr 1fr;
     gap: 20%;
+    margin: 100px 0;
+
 }
 .about h2{
     color: #393535;
@@ -101,6 +110,8 @@ button{
 }
 .projects{
     padding: 0 80px;
+    margin-top: 20px;
+    
 }
 .projects h2{
     padding: 40px 0;
@@ -110,15 +121,24 @@ button{
     gap: 150px;
     padding: 40px;
 }
+.btn{
+    color: #0F1624;
+    background-color: #FFFFFF;
+    margin: 20px;
+    
+}
 .cards {
     border-top-left-radius: 20px;
     border-bottom-right-radius: 20px;
     background-color: #0F1624;
     color: #FFFFFF;
+    padding: 10px;
+    
+
 }
 .cards img{
     height: 300px;
-    width: 400px;
+    width: 420px;
     border-radius: 10px;
     margin: 20px;
     align-items: center;
@@ -129,15 +149,18 @@ button{
 
 }
 hr{
-    width: 80%;
+    width: 70%;
     align-self: center;
     align-items: center;
     align-content: center;
     justify-content: center;
     position: relative;
-    left: 40px;
+    left: 60px;
     height: 5px;
     background-color: white;
+}
+.cards p{
+    margin: 20px;
 }
 .skills{
     padding: 50px 80px;
@@ -157,7 +180,7 @@ hr{
     color: #535353;
     
 }
-.footer{
+footer{
     background-color: #F6F4F4;
     padding: 20px 80px;
     margin: 30px 10px;
