@@ -31,7 +31,7 @@ body{
     gap: 10px;
     font-family: "Poppins";
 }
-.nav-logo img{}
+
 .nav-logo p{
     font-weight: 400;
     color: white;
@@ -52,13 +52,35 @@ body{
     list-style: none;
     gap: 20px;
 }
+.nav-hamb {
+    display: none;
+}
+@media screen and (max-width:600px){
+    .nav-links ul{
+    display: none;
+}
+
+.nav-logo-both .nav-links-logos{
+    display: none;
+}
+.nav-logo-both .nav-hamb {
+    display: flex;
+    background-color: #fff;
+}
+
+    }
+@media screen and (min-width:600px) and (max-width:1023px){
+    .nav-links ul{
+        display: none;
+    }
+}
 
 .hero{
     background-color: #0F1624;
     display: grid;
     grid-template-columns: 2fr 1fr;
     gap: 30px;
-   margin-top: 100px;
+    margin-top: 100px;
     padding: 80px;
 }
 
@@ -80,6 +102,19 @@ body{
     font-weight: 600;
     width: 70%;
 }
+@media screen and (max-width:600px){
+    .hero{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+}
+@media screen and (max-width:1023px){
+    .hero{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+}
+
 button{
     background-color: #0469E0;
     color: #FFFFFF;
@@ -133,8 +168,6 @@ button{
     background-color: #0F1624;
     color: #FFFFFF;
     padding: 10px;
-    
-
 }
 .cards img{
     height: 300px;
@@ -146,7 +179,6 @@ button{
 .cards h3{
     padding: 10px;
     text-align: center;
-
 }
 hr{
     width: 70%;
@@ -162,6 +194,19 @@ hr{
 .cards p{
     margin: 20px;
 }
+@media screen and (max-width:600px){
+    .card-row{
+        display: flex;
+        flex-direction: column;
+    }
+}
+@media screen and (min-width:600px)and (max-width:1023px){
+    .card-row{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
 .skills{
     padding: 50px 80px;
 }
@@ -172,6 +217,7 @@ hr{
 .skills-grid ul {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    gap:0 20px;
     font-size: 20px;
     font-weight: 600;
     font-family: "Poppins";
@@ -180,6 +226,20 @@ hr{
     color: #535353;
     
 }
+@media screen and (max-width:600px){
+    .skills-grid ul {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+}
+@media screen and (min-width:600px)and (max-width:1023px){
+    .skills-grid ul {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap:0 20px;
+    }
+}
+
 footer{
     background-color: #F6F4F4;
     padding: 20px 80px;
@@ -187,4 +247,6 @@ footer{
     text-align: center;
     font-weight: 600;
     font-family: "Poppins";
+    width: ;
 }
+
